@@ -9,6 +9,13 @@ use Spatie\Health\Facades\Health;
 use Spatie\Health\Checks\Checks\OptimizedAppCheck;
 use Spatie\Health\Checks\Checks\DebugModeCheck;
 use Spatie\Health\Checks\Checks\EnvironmentCheck;
+use Spatie\CpuLoadHealthCheck\CpuLoadCheck;
+use Spatie\Health\Checks\Checks\DatabaseSizeCheck;
+use Spatie\Health\Checks\Checks\QueueCheck;
+use Spatie\Health\Checks\Checks\RedisCheck;
+use Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck;
+
+use Ziming\LaravelMemoryHealthCheck\UsedMemoryCheck;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -33,6 +40,12 @@ class AppServiceProvider extends ServiceProvider
             OptimizedAppCheck::new(),
             DebugModeCheck::new(),
             EnvironmentCheck::new(),
+            UsedMemoryCheck::new(),
+            CpuLoadCheck::new(),
+            DatabaseSizeCheck::new(),
+            QueueCheck::new()->onQueue(['default', 'media']),
+            RedisCheck::new(),
+            SecurityAdvisoriesCheck::new(),
         ]);
     }
 }
