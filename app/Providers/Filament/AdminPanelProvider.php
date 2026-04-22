@@ -26,6 +26,7 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 use BezhanSalleh\FilamentExceptions\FilamentExceptionsPlugin;
 use Octopy\Filament\Palette\PaletteSwitcherPlugin;
 use SpyApp\ThemeEdinburgh\ThemeEdinburghPlugin;
+use Slimani\MediaManager\MediaManagerPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -59,6 +60,7 @@ class AdminPanelProvider extends PanelProvider
                 FilamentExceptionsPlugin::make(),
                 PaletteSwitcherPlugin::make(),
                 ThemeEdinburghPlugin::make(),
+                MediaManagerPlugin::make(),
             ])
 
             ->middleware([
