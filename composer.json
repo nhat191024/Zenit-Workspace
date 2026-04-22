@@ -16,6 +16,7 @@
         "laravel/tinker": "^3.0",
         "octopyid/filament-palette": "^1.0",
         "predis/predis": "^3.4",
+        "spatie/laravel-medialibrary": "^11.21",
         "spatie/laravel-permission": "^7.3",
         "spykapps/theme-edinburgh": "^1.0"
     },
