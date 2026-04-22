@@ -2,3 +2,5 @@
 
 @source '../../../../app/Filament/**/*';
 @source '../../../../resources/views/filament/**/*';
+
+@source '../../../../vendor/bezhansalleh/filament-exceptions/resources/views/**/*.blade.php';
