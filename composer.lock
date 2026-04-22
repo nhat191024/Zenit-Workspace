@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53b45f7af8f0b502f814bdbb9f73ebba",
+    "content-hash": "bcc8ca6b595fa4fcdb36de2b86e323ef",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -1410,6 +1410,75 @@
                 "source": "https://github.com/filamentphp/filament"
             },
             "time": "2026-04-21T15:39:57+00:00"
+        },
+        {
+            "name": "flexpik/filament-studio",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flexpik/filament-studio.git",
+                "reference": "d9b7f3a3d4ac480c4d8f34223402558646408698"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flexpik/filament-studio/zipball/d9b7f3a3d4ac480c4d8f34223402558646408698",
+                "reference": "d9b7f3a3d4ac480c4d8f34223402558646408698",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^5.0",
+                "php": "^8.3",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "dedoc/scramble": "^0.13",
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^4.0",
+                "pestphp/pest-plugin-laravel": "^4.0",
+                "pestphp/pest-plugin-mutate": "^4.0",
+                "spatie/laravel-permission": "^7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Flexpik\\FilamentStudio\\FilamentStudioServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Flexpik\\FilamentStudio\\": "src/",
+                    "Flexpik\\FilamentStudio\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Flexpik",
+                    "email": "info@flexpick.net",
+                    "homepage": "https://flexpick.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dynamic data model manager for Filament — build unlimited collections with custom fields, EAV storage, versioning, and multi-tenancy",
+            "homepage": "https://github.com/flexpik/filament-studio",
+            "keywords": [
+                "crud",
+                "data-manager",
+                "dynamic-models",
+                "eav",
+                "filament",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/flexpik/filament-studio/issues",
+                "source": "https://github.com/flexpik/filament-studio"
+            },
+            "time": "2026-04-15T17:58:29+00:00"
         },
         {
             "name": "fruitcake/php-cors",
