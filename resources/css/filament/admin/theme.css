@@ -5,3 +5,4 @@
 
 @source '../../../../vendor/bezhansalleh/filament-exceptions/resources/views/**/*.blade.php';
 @source '../../../../vendor/guava/calendar/resources/**/*';
+@source '../../../../vendor/octopyid/filament-palette/resources';

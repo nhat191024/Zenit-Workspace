@@ -13,6 +13,7 @@
         "guava/calendar": "*",
         "laravel/framework": "^13.0",
         "laravel/tinker": "^3.0",
+        "octopyid/filament-palette": "^1.0",
         "spatie/laravel-permission": "^7.3"
     },
     "require-dev": {
