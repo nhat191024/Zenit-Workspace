@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae6965910dc31fa9d25ffa758832fdbf",
+    "content-hash": "f87893ff367fb055347ffe41c967995f",
     "packages": [
         {
             "name": "bezhansalleh/filament-exceptions",
@@ -612,6 +612,56 @@
                 }
             ],
             "time": "2026-03-20T21:10:52+00:00"
+        },
+        {
+            "name": "cyberline/filament-navigation-footermenu",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CyberLine/filament-navigation-footermenu.git",
+                "reference": "b46132c746bcadb5f937243d68bce3f16a4444c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CyberLine/filament-navigation-footermenu/zipball/b46132c746bcadb5f937243d68bce3f16a4444c3",
+                "reference": "b46132c746bcadb5f937243d68bce3f16a4444c3",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^4.0|^5.0",
+                "illuminate/contracts": "^11.0|^12.0|^13.0",
+                "illuminate/support": "^11.0|^12.0|^13.0",
+                "php": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Cyberline\\FilamentNavigationFootermenu\\FooterMenuServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cyberline\\FilamentNavigationFootermenu\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CyberLine",
+                    "homepage": "https://github.com/CyberLine"
+                }
+            ],
+            "description": "Configurable footer navigation for Filament v4, v5: collapsible sidebar group and topbar dropdown (dark mode ready).",
+            "support": {
+                "issues": "https://github.com/CyberLine/filament-navigation-footermenu/issues",
+                "source": "https://github.com/CyberLine/filament-navigation-footermenu/tree/v1.0.1"
+            },
+            "time": "2026-04-18T17:44:40+00:00"
         },
         {
             "name": "danharrin/date-format-converter",
@@ -11983,7 +12033,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
