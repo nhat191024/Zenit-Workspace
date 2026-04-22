@@ -27,6 +27,7 @@ use BezhanSalleh\FilamentExceptions\FilamentExceptionsPlugin;
 use Octopy\Filament\Palette\PaletteSwitcherPlugin;
 use SpyApp\ThemeEdinburgh\ThemeEdinburghPlugin;
 use Slimani\MediaManager\MediaManagerPlugin;
+use ShuvroRoy\FilamentSpatieLaravelHealth\FilamentSpatieLaravelHealthPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -61,6 +62,7 @@ class AdminPanelProvider extends PanelProvider
                 PaletteSwitcherPlugin::make(),
                 ThemeEdinburghPlugin::make(),
                 MediaManagerPlugin::make(),
+                FilamentSpatieLaravelHealthPlugin::make(),
             ])
 
             ->middleware([
