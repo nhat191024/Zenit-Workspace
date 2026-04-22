@@ -54,7 +54,7 @@ class AdminPanelProvider extends PanelProvider
             ])
 
             ->plugins([
-                FilamentExceptionsPlugin::class,
+                FilamentExceptionsPlugin::make(),
             ])
 
             ->middleware([
