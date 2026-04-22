@@ -10,3 +10,4 @@
 @source '../../../../vendor/octopyid/filament-palette/resources';
 @source '../../../../vendor/slimani/filament-media-manager/resources/**/*';
 @source '../../../../vendor/bezhansalleh/filament-language-switch/**';
+@source "../../../../vendor/relaticle/flowforge/resources/views/**/*.blade.php";
