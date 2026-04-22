@@ -4,3 +4,4 @@
 @source '../../../../resources/views/filament/**/*';
 
 @source '../../../../vendor/bezhansalleh/filament-exceptions/resources/views/**/*.blade.php';
+@source '../../../../vendor/guava/calendar/resources/**/*';

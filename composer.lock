@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29e46f50e5fc9c73b0a83ec39a3cef5f",
+    "content-hash": "fd5b44eabe409cd5320b507e6614b4d5",
     "packages": [
         {
             "name": "bezhansalleh/filament-exceptions",
@@ -1778,6 +1778,86 @@
                 }
             ],
             "time": "2025-12-27T19:43:20+00:00"
+        },
+        {
+            "name": "guava/calendar",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GuavaCZ/calendar.git",
+                "reference": "6caa50e4ccadad601203c7b90f4614f6a331876a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GuavaCZ/calendar/zipball/6caa50e4ccadad601203c7b90f4614f6a331876a",
+                "reference": "6caa50e4ccadad601203c7b90f4614f6a331876a",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^5.0",
+                "illuminate/contracts": "^11.0|^12.0|^13.0",
+                "php": "^8.1|^8.2",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.8|^8.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^9.0|^10.0|^11.0",
+                "pestphp/pest": "^2.36|^4.4",
+                "pestphp/pest-plugin": "^2.1.1|^4.0",
+                "pestphp/pest-plugin-arch": "^2.0|^4.0",
+                "pestphp/pest-plugin-laravel": "^2.0|^4.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0|^2.0",
+                "phpstan/phpstan-phpunit": "^1.0|^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Guava\\Calendar\\CalendarServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Guava\\Calendar\\": "src/",
+                    "Guava\\Calendar\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukas Frey",
+                    "email": "lukas.frey@guava.cz",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds support for vkurko/calendar to Filament PHP.",
+            "homepage": "https://github.com/GuavaCZ/calendar",
+            "keywords": [
+                "Guava",
+                "calendar",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/GuavaCZ/calendar/issues",
+                "source": "https://github.com/GuavaCZ/calendar/tree/3.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GuavaCZ",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-03-23T18:09:09+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -4060,6 +4140,54 @@
                 }
             ],
             "time": "2026-02-16T23:10:27+00:00"
+        },
+        {
+            "name": "octopyid/filament-palette",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OctopyID/FilamentPalette.git",
+                "reference": "84552c2a2b22e109bf8c644917a7f9fcb7e62ec5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OctopyID/FilamentPalette/zipball/84552c2a2b22e109bf8c644917a7f9fcb7e62ec5",
+                "reference": "84552c2a2b22e109bf8c644917a7f9fcb7e62ec5",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.3|^4|^5",
+                "php": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Octopy\\Filament\\Palette\\Providers\\PaletteServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Octopy\\Filament\\Palette\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Supian M",
+                    "email": "supianidz@octopy.dev"
+                }
+            ],
+            "description": "Easily switch and customize the UI color palette for your FilamentPHP",
+            "support": {
+                "issues": "https://github.com/OctopyID/FilamentPalette/issues",
+                "source": "https://github.com/OctopyID/FilamentPalette/tree/v1.0.3"
+            },
+            "time": "2025-11-11T13:48:31+00:00"
         },
         {
             "name": "openspout/openspout",
