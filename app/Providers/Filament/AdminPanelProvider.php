@@ -25,6 +25,8 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 
 use BezhanSalleh\FilamentExceptions\FilamentExceptionsPlugin;
 use Octopy\Filament\Palette\PaletteSwitcherPlugin;
+use SpyApp\ThemeEdinburgh\ThemeEdinburghPlugin;
+
 class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
@@ -56,6 +58,7 @@ class AdminPanelProvider extends PanelProvider
             ->plugins([
                 FilamentExceptionsPlugin::make(),
                 PaletteSwitcherPlugin::make(),
+                ThemeEdinburghPlugin::make(),
             ])
 
             ->middleware([
